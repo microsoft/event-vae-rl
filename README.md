@@ -1,6 +1,6 @@
 # Representation Learning and Reinforcement Learning from Event Cameras
 
-This repository provides a codebase to train and evaluate models as seen in the paper 
+This repository will provide a codebase to train and evaluate models as seen in the paper (coming soon!)
 
 **Representation Learning for Event-based Visuomotor Policies** <br>
 *Sai Vemprala, Sami Mian, Ashish Kapoor* <br>
