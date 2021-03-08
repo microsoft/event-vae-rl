@@ -15,10 +15,7 @@ from data_utils import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--input_file",
-    type=str,
-    default="data/esim_RacingCourse.txt",
-    help="training data filename",
+    "--input_file", type=str, default="data/gates.txt", help="training data filename",
 )
 parser.add_argument("--batch_size", type=int, default=2000, help="input batch size")
 parser.add_argument("--batch_num", type=int, default=50, help="number of batches")

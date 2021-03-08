@@ -19,9 +19,7 @@ def kaiming_init(m):
 
 
 class EventVAE(nn.Module):
-    def __init__(
-        self, data_len, latent_size, params, tc=False,
-    ):
+    def __init__(self, data_len, latent_size, params, tc=False):
         """
         data_len (int)      : 2 for X and Y, 3 to include polarity as well
         latent_size (int)            : Size of latent vector

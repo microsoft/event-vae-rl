@@ -9,7 +9,7 @@ from stable_baselines3.common.evaluation import evaluate_policy
 # evae_weights = "weights/evae_full_tc.pt"
 evae_weights = "weights/evae_xy.pt"
 
-policy_weights = "trained/brp_xy"
+policy_weights = "policies/brp_xy"
 
 rep_type = "brp_xy"
 

@@ -37,9 +37,7 @@ class EventProcessor:
         self.z_prev = None
 
         # Initialize event VAE and load weights
-        self.en = EventVAE(
-            data_len, ls, [self.H, self.W], decoder="image", norm_type="none", tc=tc
-        )
+        self.en = EventVAE(data_len, ls, [self.H, self.W], tc=tc)
 
         checkpoint = torch.load(pretrained_weights)
         self.en.load_state_dict(checkpoint)
