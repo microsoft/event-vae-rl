@@ -1,0 +1,43 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings_json.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "ClockSpeed": 1.0,
+  "Vehicles": {
+    "SimpleFlight": {
+      "VehicleType": "SimpleFlight",
+	  "X": 0,
+      "Y": 0,
+      "Z": -1,
+      "DefaultVehicleState": "Armed",
+      "EnableCollisionPassthrogh": false,
+      "EnableCollisions": true,
+      "AllowAPIAlways": true,
+      "RC": {
+        "RemoteControlID": 0,
+        "AllowAPIWhenDisconnected": false
+      }
+    }
+  },
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "TargetGamma": 1.2,
+        "Width": 64,
+        "Height": 64,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.25,
+        "AutoExposureMinBrightness": 0.02,
+        "MotionBlurAmount": 0
+      }
+    ],
+	"Gimbal": {
+      "Stabilization": 1,
+      "Pitch": 0, "Roll": 0, "Yaw": 270
+    }
+
+	}
+}
