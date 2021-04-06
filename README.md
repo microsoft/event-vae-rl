@@ -48,9 +48,17 @@ Given a file of events, you can run the `train_vae.py` script as follows:
 - Without polarity and temporal coding: `python train_vae.py --input_file <path_to_event_data> --data_len 2`
 
 ## Event RL
-The obstacle course environment used for training and testing policies is under the Releases section, accessible as an AirSim binary (Windows binaries are available, Linux binaries coming soon). Our sample task involves a drone navigating in an obstacle course in two dimensions, with three discrete actions: forward, left or right. 
+The obstacle course environment used for training and testing policies is under the Releases section, accessible as an AirSim binary (Windows binaries are available, Linux binaries coming soon). 
 
-The environment contains several 'maps', accessible through the UE console command `Open <mapname>`. We also provide evaluation maps with different obstacle textures and shapes, focused on evaluating the out-of-distribution generalization capability of the policies trained with the eVAE. The available maps are as follows:
+To run the AirSim environment: 
+
+1. Download the binaries from the releases section and unzip it. 
+2. Copy the settings file `event_rl/settings.json` to `C:\Users\$USERNAME\Documents\AirSim\settings.json`. 
+3. Navigate to the downloaded binary folder and run `./run_env.bat`.
+
+Our sample task involves a drone navigating in an obstacle course in two dimensions, with three discrete actions: forward, left or right. 
+
+The environment contains several 'maps', accessible through the UE console command `Open <mapname>` (UE console can be opened with the tilde key ~). We also provide evaluation maps with different obstacle textures and shapes, focused on evaluating the out-of-distribution generalization capability of the policies trained with the eVAE. The available maps are as follows:
 
 - Train:_Training environment with pole-shaped obstacles and four lanes of increasing difficulty._ 
 - Test: _Larger poles environment for evaluation_
