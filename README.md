@@ -48,7 +48,7 @@ Given a file of events, you can run the `train_vae.py` script as follows:
 - Without polarity and temporal coding: `python train_vae.py --input_file <path_to_event_data> --data_len 2`
 
 ## Event RL
-The obstacle course environment used for training and testing policies is under the Releases section, accessible as an AirSim binary (Windows binaries are available, Linux binaries coming soon). 
+The obstacle course environment used for training and testing policies is under the Releases section, accessible as an AirSim binary. Both Windows and Linux binaries are available.
 
 To run the AirSim environment: 
 
