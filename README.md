@@ -4,6 +4,7 @@ This repository provides a PyTorch codebase to train and evaluate models as seen
 
 **Representation Learning for Event-based Visuomotor Policies** <br>
 *Sai Vemprala, Sami Mian, Ashish Kapoor* <br>
+To appear at NeurIPS 2021 <br>
 [**Paper**](https://arxiv.org/abs/2103.00806) <br>
 
 ## License and Citation
@@ -40,7 +41,7 @@ pip install -r requirements.txt
 
 ## Event VAE
 
-To train an event VAE, the code expects a file of event data. We provide some sample files to train representations over, or you can generate this file yourself through [AirSim's event simulator feature](https://github.com/microsoft/AirSim/blob/master/docs/event_sim.md). 
+To train an event VAE, the code expects a file of event data. We provide some sample files to train representations over (See https://github.com/microsoft/event-vae-rl/releases/tag/v1.0-d/), or you can generate event data files yourself from AirSim through [AirSim's event simulator feature](https://github.com/microsoft/AirSim/blob/master/docs/event_sim.md). 
 
 Given a file of events, you can run the `train_vae.py` script as follows:
 
