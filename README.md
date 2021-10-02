@@ -7,6 +7,8 @@ This repository provides a PyTorch codebase to train and evaluate models as seen
 To appear at NeurIPS 2021 <br>
 [**Paper**](https://arxiv.org/abs/2103.00806) <br>
 
+Please visit our [blogpost](https://www.microsoft.com/en-us/research/blog/learning-visuomotor-policies-for-autonomous-systems-from-event-based-cameras/) for a summary on the idea and approach!
+
 ## License and Citation
 This project is licensed under the terms of the MIT license. By using the software, you are agreeing to the terms of the [license agreement](LICENSE).
 If you use this code in your research, please cite our work as follows:
