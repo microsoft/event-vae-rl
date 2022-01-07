@@ -55,6 +55,30 @@ class EventStreamArray:
 
         event_batch_np = np.asarray(event_stack, dtype=np.float32)
         return event_batch_np
+    
+    def get_event_batch_idx(self, start_idx, size):
+        event_stack = []
+
+        t_start = self.events[start_idx][0]
+        t_final = self.events[start_idx + size - 1][0]
+
+        dt = t_final - t_start
+        idx = start_idx
+        # Iterate over events for a window of dt
+        while idx - start_idx < size:
+            e_curr = deepcopy(self.events[idx])
+            event_stack.append(e_curr)
+
+            if dt > 0:
+                t_relative = float(t_final - e_curr[0]) / dt
+            else:
+                t_relative = 0
+            event_stack[idx - start_idx][0] = t_relative
+
+            idx += 1
+
+        event_batch_np = np.asarray(event_stack, dtype=np.float32)
+        return event_batch_np
 
     def get_event_timeslice(self, start_idx, dt_max=16000):
         """

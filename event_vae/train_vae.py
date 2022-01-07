@@ -34,7 +34,6 @@ parser.add_argument(
 parser.add_argument(
     "--decoder", type=str, default="image", help="decoder type: stream or image"
 )
-parser.add_argument("--outf", type=str, default="weights", help="output folder")
 parser.add_argument("--model", type=str, default="", help="model path")
 parser.add_argument(
     "--norm_type",
@@ -57,7 +56,7 @@ random.seed(opt.manualSeed)
 torch.manual_seed(opt.manualSeed)
 
 try:
-    os.makedirs(opt.outf)
+    os.makedirs(opt.output_dir)
 except OSError:
     pass
 
