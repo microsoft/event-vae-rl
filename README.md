@@ -4,7 +4,7 @@ This repository provides a PyTorch codebase to train and evaluate models as seen
 
 **Representation Learning for Event-based Visuomotor Policies** <br>
 *Sai Vemprala, Sami Mian, Ashish Kapoor* <br>
-To appear at NeurIPS 2021 <br>
+NeurIPS 2021 (Spotlight)
 [**Paper**](https://arxiv.org/abs/2103.00806) <br>
 
 Please visit our [blogpost](https://www.microsoft.com/en-us/research/blog/learning-visuomotor-policies-for-autonomous-systems-from-event-based-cameras/) for a summary on the idea and approach!
@@ -49,6 +49,8 @@ Given a file of events, you can run the `train_vae.py` script as follows:
 
 - With polarity and temporal coding: `python train_vae.py --input_file <path_to_event_data> --data_len 3 --tcode`
 - Without polarity and temporal coding: `python train_vae.py --input_file <path_to_event_data> --data_len 2`
+
+See `test.py` for a starting point on how to test trained eVAE models.
 
 ## Event RL
 The obstacle course environment used for training and testing policies is under the Releases section, accessible as an AirSim binary. Both Windows and Linux binaries are available.
