@@ -8,6 +8,6 @@ stable-baselines3==0.8.0
 gym==0.17.3
 torch==1.6.0
 torchvision==0.7.0
-tornado==4.5.3
+tornado==6.3.3
 wincertstore==0.2
 
